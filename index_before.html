@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Date" content="2023-12-29T18:22">
+  <meta http-equiv="Subject" content="모든 디바이스에 최적화된 반응형웹">
+  <meta http-equiv="Title" content="러쉬 반응형웹">
+  <meta http-equiv="Other" content="박지현">
+  <meta http-equiv="Distribution" content="박지현">
+  <meta http-equiv="Copyright" content="러쉬">
+  <meta http-equiv="Build" content="2023-12-29T18">
+  <title>러쉬 메인페이지</title>
+
+  <!-- 아이폰에서 숫자가 전화번호로 인식해서 어둡게 나오는 것을 방지 -->
+  <meta name="format-detection" content=" telephone=no">
+
+  <!-- 파비콘 이미지 삽입하기 -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+  <!-- 1. 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 2. 기본서식 base -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+  <!-- 3. pc해상도에 맞는 서식 -->
+  <link rel="stylesheet" href="./css/pc_before.css" type="text/css">
+
+  <!-- 4. tablet해상도에 맞는 서식 -->
+  <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+
+  <!-- 5. mobile해상도에 맞는 서식 -->
+  <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+
+
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./script/main.js"></script>
+
+  <!-- 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+  
+</head>
+<body>
+<!-- 헤더 영역 -->
+  <header>
+    <div class="h_wrap">
+      <div class="h_inner">
+        <h1>
+          <a href="index.html" title="상단 로고">
+            <img src="./img/logo_white.png" alt="흰색 로고">
+          </a>
+        </h1>
+        <nav>
+          <ul class="gnb">
+            <li><a href="#" title="제품소개">제품소개</a>
+              <ul class="sub">
+                <li><a href="#" title="샤워">샤워</a></li>
+                <li><a href="#" title="보디">보디</a></li>
+                <li><a href="#" title="헤어">헤어</a></li>
+                <li><a href="#" title="페이스">페이스</a></li>
+                <li><a href="#" title="메이크업">메이크업</a></li>
+                <li><a href="#" title="프래그런스">프래그런스</a></li>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" title="이벤트">이벤트</a>
+              <ul class="sub">
+                <li><a href="#" title="온라인 이벤트">온라인 이벤트</a></li>
+                <li><a href="#" title="매장 이벤트">매장 이벤트</a></li>
+                <li><a href="#" title="선정자 발표">선정자 발표</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="러쉬소개">러쉬소개</a>
+              <ul class="sub">
+                <li><a href="#" title="러쉬 소개">러쉬 소개</a></li>
+                <li><a href="#" title="러쉬 이야기">러쉬 이야기</a></li>
+                <li><a href="#" title="서명캠페인">서명캠페인</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="커뮤니티">커뮤니티</a>
+              <ul class="sub">
+                <li><a href="#" title="고객센터">고객센터</a></li>
+                <li><a href="#" title="Q&A">Q&A</a></li>
+                <li><a href="#" title="다운로드 러쉬">다운로드 러쉬</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="스파">스파</a></li>
+            <li><a href="#" title="매장안내">매장안내</a></li>
+
+            <li><a href="#" title="장바구니">
+              <i class="fas fa-shopping-cart"></i>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+<!-- 메인 영역 -->
+  <main>
+    <div class="main_top">
+      <img src="./img/main_img1.png" alt="메인 배경 이미지" class="main_img" id="m_img">
+
+      <div class="txt01">
+        <h2 class="main_title">프레쉬 핸드메이드<br>코스메틱 브랜드</h2>
+        <p class="main_txt">우리의 글로벌 기부 생태계는 적절하고 급진적이며 광범위 합니다.</p>
+      </div>
+    </div>
+
+    <!-- 스크롤 -->
+    <div class="s_btn">
+      <i class="fa-solid fa-computer-mouse"></i>
+      <span>SCROLL</span>
+    </div>
+
+    <!-- 중간 메뉴 -->
+    <div class="mid_menu">
+      <h2 class="title01">Products</h2>
+      <p class="title_s">마우스를 올려 제품 상세소개를 확인해보세요!</p>
+
+      <ul class="menu">
+        <li>
+          <a href="#" title="샤워">
+            <img src="./img/menu01.png" alt="샤워">
+            <div class="menu_inner">
+              <h3>샤워</h3>
+              <p>일렁이는 향기와 함께 피부를<br>
+              건강하게 지켜주세요</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="보디">
+            <img src="./img/menu02.png" alt="보디">
+            <div class="menu_inner">          
+              <h3>보디</h3>
+              <p>늘 당신의 피부를 향긋하고<br>
+              건강하게 빚내 줄거예요</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="헤어">
+            <img src="./img/menu03.png" alt="헤어">
+            <div class="menu_inner">
+              <h3>헤어</h3>
+              <p>건강한 재료만 담아<br>
+              매일 더 싱그러울 거예요</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#" title="페이스">
+            <img src="./img/menu04.png" alt="페이스">
+            <div class="menu_inner">          
+              <h3>페이스</h3>
+              <p>신선한 재료로 만들어<br>
+              믿을 수 있는 제품이예요</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="메이크업">
+            <img src="./img/menu05.png" alt="메이크업">
+            <div class="menu_inner">
+              <h3>메이크업</h3>
+              <p>다른 누구도 아닌,<br>
+              가장 나다운 느낌 표현해 보세요</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="프래그런스">
+            <img src="./img/menu06.png" alt="프래그런스">
+            <div class="menu_inner">
+              <h3>프래그런스</h3>
+              <p>자연과 음악, 시가 주는 영감으로<br>
+              빚어낸 특별한 향기</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+  <!-- 어바웃 어스 -->
+  <article class="about_wrap">
+    <h2 class="title01">About Us</h2>
+
+    <h3>"러쉬는 자연에서 얻은 신선한 재료와<br>
+    동물실험을 하지 않는 정직한 재료를 사용하여<br>
+    모든 제품을 손으로 만듭니다."</h3>
+
+    <p>더불어 공장 거래, 인건 보호, 포장 최소화 등 다양한 캠페인 활동을 통해 기업 윤리와 신념을 알리고 있습니다.</p>
+
+    <ul class="about">
+      <li>
+        <a href="#" title="러쉬소개01">
+          <img src="./img/about01.png" alt="소개 이미지1">
+          <p>러쉬는 어떤 이유에서도<br>
+          제품을 동물실험 하지 않고,<br>
+          동물실험을 거친 원재료조차<br>
+          사용하지 않습니다.</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="러쉬소개02">
+          <img src="./img/about02.png" alt="소개 이미지2">
+          <p>러쉬는 배쓰 밤, 샤워 젤리,<br>
+          고체 샴푸와 같은<br>
+          기발하고 혁신적인<br>
+          제품을 선보입니다.</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="러쉬소개03">
+          <img src="./img/about03.png" alt="소개 이미지3 ">
+          <p>신선함은 러쉬 철학의 <br>핵심입니다.</p>
+        </a>
+      </li>
+    </ul>
+  </article>
+
+
+
+
+
+
+  <!-- 베스트 셀러 -->
+<div class="best_wrap">
+  <article class="best">
+    <h2 class="title01">Best Seller</h2>
+    
+    <ul>
+      <li><a href="#" title="베스트셀러 1번">
+        <img src="./img/best01.png" alt="베스트셀러 1번">
+        <span class="span vegan">VEGAN</span> 
+        <span class="span fresh">프레쉬</span>
+        <p class="b_tit">더티 보디 스프레이</p>
+        <p class="b_txt">보디 스프레이</p>
+        <p class="b_pri">&#xFFE6; 60,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 2번">
+        <img src="./img/best02.png" alt="베스트셀러 2번">
+        <span class="span vegan">VEGAN</span> 
+        <p class="b_tit">대디-오</p>
+        <p class="b_txt">샴푸</p>
+        <p class="b_pri">&#xFFE6; 19,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 3번">
+        <img src="./img/best03.png" alt="베스트셀러 3번">
+        <span class="span vegan">VEGAN</span> 
+        <p class="b_tit">수퍼 밀크</p>
+        <p class="b_txt">컨디셔닝 헤어 프라이머</p>
+        <p class="b_pri">&#xFFE6; 35,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 4번">
+        <img src="./img/best04.png" alt="베스트셀러 4번">
+        <span class="span region">국내제조</span>  
+        <p class="b_tit">마스크 오브 매그너민티</p>
+        <p class="b_txt">파워 마스크</p>
+        <p class="b_pri">&#xFFE6; 22,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 5번">
+        <img src="./img/best05.png" alt="베스트셀러 5번">
+        <span class="span region">국내제조</span>  
+        <p class="b_tit">코스메틱 워리어</p>
+        <p class="b_txt">프레쉬 페이스 마스크</p>
+        <p class="b_pri">&#xFFE6; 25,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 6번">
+        <img src="./img/best06.png" alt="베스트셀러 6번">
+        <span class="span vegan">VEGAN</span> 
+        <p class="b_tit">슬리피</p>
+        <p class="b_txt">보디 로션</p>
+        <p class="b_pri">&#xFFE6; 24,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 7번">
+        <img src="./img/best07.png" alt="베스트셀러 7번">
+        <span class="span vegan">VEGAN</span> 
+        <p class="b_tit">로즈 아르간 보디 컨디셔너</p>
+        <p class="b_txt">보디 컨디셔너</p>
+        <p class="b_pri">&#xFFE6; 44,000</p>
+      </a></li>
+      <li><a href="#" title="베스트셀러 8번">
+        <img src="./img/best08.png" alt="베스트셀러 8번">
+        <span class="span vegan">VEGAN</span> 
+        <span class="span flower">플로럴</span>
+        <p class="b_tit">트와일라잇</p>
+        <p class="b_txt">보디 스프레이</p>
+        <p class="b_pri">&#xFFE6; 60,000</p>
+      </a></li>
+
+    </ul>
+    <!-- <a href="javascript:woid(0);" title="이전" id="l_btn" class="b_btn">
+      <i class="fas fa-chevron-left"></i></a>
+    <a href="javascript:woid(0);" title="다음" id="r_btn" class="b_btn">
+      <i class="fas fa-chevron-right"></i></a> -->
+  </article>
+</div>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <article class="find_wrap">
+    <ul class="find">
+      <li class="find01">
+          <h4>매장찾기</h4>
+          <p>가장 가까운 매장을 찾고</p>
+          <p>향기로운 러쉬를 만나보세요</p>
+  
+          <input type="button" value="자세히 보기">
+
+      </li>
+      <li class="find02">
+        <h4>고객센터</h4>
+        
+        <input type="button" value="상담톡 시작하기">
+
+        <p>상담전화 13:00 - 16:00 (평일)</p>
+        <p>상담톡 10:00 - 16:00 (평일)</p>
+        <p class="mail">jihyun@lush.co.kr</p>
+      </li>
+    </ul>
+    <div class="back_left"></div>
+    <div class="back_right"></div>
+  </article>
+
+
+
+
+
+
+  <!-- 러쉬 6개명 -->
+  <article class="moto_wrap">
+    <div class="moto">
+      <ul>
+        <li><img src="./img/moto01.png" alt="러쉬 모토1"></li>
+        <li><img src="./img/moto02.png" alt="러쉬 모토2"></li>
+        <li><img src="./img/moto03.png" alt="러쉬 모토3"></li>
+        <li><img src="./img/moto04.png" alt="러쉬 모토4"></li>
+        <li><img src="./img/moto05.png" alt="러쉬 모토5"></li>
+        <li><img src="./img/moto06.png" alt="러쉬 모토6"></li>
+      </ul>
+    </div>
+  </article>
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+<!-- 푸터 영역 -->
+  <footer>
+    <h1><img src="./img/logo_white.png" alt="하단 로고"></h1>
+
+<div class="f_wrap">
+  <div class="f_left">
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="#" title="영상정보관리지침">영상정보관리지침</a></li>
+        <li><a href="#" title="이용약관">이용약관</a></li>
+      </ul>
+    </nav>
+
+    <address>
+      <p>
+        서울 강남구 학동로 000(0000 빌딩(000 B/d)) 주식회사 러쉬코리아<br>
+        사이트 운영자 : 박지현 | 대표이사 : 000<br>
+        사업자등록번호 : 000-00-00000 사업자정보확인<br>
+        통신판매업 신고번호 : 0000-0000-0000 | 개인정보보호책임자 : 000<br>
+        <b>COPYRIGHT ⓒ LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</b>
+      </p>
+    </address>
+  </div>
+
+  <div class="f_right">
+    <dl class="follow">
+      <dt>FOLLOW US</dt>
+      <dd><a href="#" title="페이스북">
+        <i class="fab fa-facebook-f"></i><span class="on">페이스북</span></a>
+      </dd>
+      <dd><a href="#" title="인스타그램">
+        <i class="fab fa-instagram"></i><span>인스타그램</span>
+      </dd></a>
+      <dd><a href="#" title="트위터">
+        <i class="fab fa-twitter"></i><span>트위터</span>
+      </dd></a>
+      <dd><a href="#" title="유튜브">
+        <i class="fab fa-youtube"></i><span>유튜브</span>
+      </dd></a>
+      <dd><a href="#" title="블로그">
+        <i class="fab fa-blogger-b"></i><span>블로그</span>
+      </dd></a>
+    </dl>
+    <dl class="service"> 
+      <dt>SERVICE</dt>
+      <dd><a href="#" title="카카오톡">카카오톡</a></dd>
+      <dd><a href="#" title="1:1상담">1:1상담</a></dd>
+      <dd><a href="#" title="FAQ">FAQ</a></dd>
+      <dd><a href="#" title="상담원 연결">상담원 연결</a></dd>
+    </dl>
+  </div>
+
+</div>
+
+  <!-- 탑버튼 -->
+  <div class="t_btn">
+    <ul>
+      <li>
+        <a href="javascript:woid(0);" title="QR코드 보기" id="qr_btn">
+          <i class="fas fa-qrcode"></i>
+        </a>
+        <div class="qr_box">
+          <span class="close"><i class="fas fa-close"></i></span>
+          <p>QR코드를 찍고</p>
+          <p>할인쿠폰을 받아보세요!</p>
+          <i class="fas fa-qrcode"></i>
+        </div>
+      </li>
+      <li>
+        <a href="login.html" title="로그인 페이지로 이동">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li>
+        <a href="search.html" title="검색 페이지로 이동">
+          <i class="fas fa-magnifying-glass"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#top" title="TOP 버튼">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  </footer>
+
+  <script>
+  // 새로고침 시 메인 이미지 랜덤 변경
+  let ran = Math.floor(Math.random()*3+1);
+
+  document.getElementById('m_img').src='./img/main_img'+ran+'.png';
+  </script>
+
+
+  
+</body>
+</html>

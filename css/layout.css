@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* pc, tablet, mobile 공통 서식 (header, footer) */
+
+/* header */
+header{
+  width:100%; 
+  height: 70px;
+  background: rgba(0, 0, 0, .5);
+  /* background: #222; */
+  position: fixed; 
+  top: 0px;
+  z-index: 9999;
+}
+
+.h_top{
+  width: 1200px;
+  height: 70px;
+  margin: 0px auto;
+  /* background: #f00; */
+  position: relative;
+}
+
+.h_top > h1{
+  position: absolute;
+  left: 0px;
+  z-index: 9999;
+}
+
+.h_top > h1 img{
+  height: 30px;
+  padding-top: 20px;
+}
+
+
+/* 내비게이션 */
+.h_bottom{
+  width: 100%;
+  /* height: 350px; */
+  background: rgba(0, 0, 0, .8);
+  transform: translateY(-70px);
+}
+
+.gnb{
+  width: 1200px;
+  position: relative;
+  margin: 0px auto;
+  padding: 25px;
+}
+
+.gnb_inner{
+  position: absolute;
+  right: 0px;
+  display: flex;
+}
+
+.gnb_inner > li{margin-left: 30px;}
+
+.gnb_inner > li > a, .gnb_inner > li i{
+  color: #fff;
+  font-size: 18px;
+}
+
+.gnb_inner > li > a{
+  display: block; 
+  text-align: center;
+}
+
+.gnb_inner > li > a:hover ~ .sub{display: block;}
+.gnb_inner > li > a:hover .h_bottom{background: rgba(0, 0, 0, .5);}
+
+
+/* 서브메뉴 */
+.sub{
+  margin-top: 50px;
+}
+
+.sub > li{text-align: center;}
+
+.sub > li > a{
+  font-size: 15px;
+  color: #fff;
+  line-height: 35px;
+}
+
+
+
+
+
+/* footer */
+footer{
+  width: 100%;
+  height: 320px;
+  background: #222;
+}
+
+footer > h1{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+footer > h1 > img{
+  width: 132px;
+  padding: 20px 0px 60px 20px;
+}
+
+.f_wrap{
+  width: 1200px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.f_left{
+  position: absolute;
+  left: 20px; top: 0px;
+}
+
+.f_lnb > ul{display: flex;}
+.f_lnb > ul > li{margin-right: 40px;}
+.f_lnb > ul > li:first-child > a{color: #FFD500;}
+.f_lnb > ul > li > a{font-size: 16px;}
+
+.f_left > address{
+  padding: 40px 0px;
+  line-height: 20px;
+}
+
+
+
+.f_right{
+  position: absolute;
+  right: 20px; top: 0px;
+  display: flex;
+  transform: translateY(-37px);
+}
+
+.f_right > dl:first-child{margin-right: 80px;}
+
+dt{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+dd{
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+dd > a > i{
+  width: 10px;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+/* top 버튼 */
+.t_btn{
+  position: fixed;
+  bottom: 50px; right: 30px;
+}
+
+.t_btn > ul > li{margin-bottom: 10px;}
+
+.t_btn > ul > li > a > i{
+  font-size: 28px;
+  padding: 9px 0px 0px 0px;
+  box-sizing: border-box;
+  width: 50px; height: 50px;
+  text-align: center;
+  background: #222;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 7px #555; */
+  border: 1px solid rgba(204, 204, 204, .3);
+}
+
+.t_btn > ul > li:first-child > a > i{
+  color: #222;
+  background: #FFD500;
+}
