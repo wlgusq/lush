@@ -4,15 +4,15 @@
     $(document).ready(function(){
 
           // 헤더 조절
-    // $(window).mousewheel(function(e,delta){
-    //   if(delta>0){
-    //     // console.log('위');
-    //     $('header').addClass('scroll');
-    //   }else if(delta<0){
-    //     // console.log('아래');
-    //     $('header').removeClass('scroll');
-    //   }
-    // });
+    $(window).mousewheel(function(e,delta){
+      if(delta>0){
+        // console.log('위');
+        $('header').addClass('scroll');
+      }else if(delta<0){
+        // console.log('아래');
+        $('header').removeClass('scroll');
+      }
+    });
 
 
     
@@ -95,74 +95,136 @@
 
 
 
-    // 배쓰밤 슬라이드
-    let j = 0;
-    const le_btn = $('.l_btn');
-    const ri_btn = $('.r_btn');
+    // // 배쓰밤 슬라이드
+    // let j = 0;
     
-  ri_btn.click(function(){
-  // i = $(this).index();
+    // const le_btn = $('.l_btn');
+    // const ri_btn = $('.r_btn');
     
-    if(j==3){
-      j=0;
-    }else{
-    j++
-    };
+    // ri_btn.click(function(){
+    //   if (j == 3) {
+    //     j = 0;
+    //   } else {
+    //     j++;
+    //   }
+    //   console.log(j);
+      
+    //   $('.bath ul').animate({
+    //     'left': -(370 * j)
+    //   }, 500);
+    // });
+    
+    // le_btn.click(function(){
+    //   if (j == 0) {
+    //     j = 3;
+    //   } else {
+    //     j--;
+    //   }
+    //   console.log(j);
+      
+    //   $('.bath ul').animate({
+    //     'left': -(370 * j)
+    //   }, 500);
+    // });
+
+
+    // // 베스트셀러 슬라이드
+    // let i = 0;
+    
+    // const l_btn = $('.l_btn');
+    // const r_btn = $('.r_btn');
+    
+    // r_btn.click(function(){
+    //   if (i == 3) {
+    //     i = 0;
+    //   } else {
+    //     i++;
+    //   }
+    //   console.log(i);
+      
+    //   $('.bath ul').animate({
+    //     'left': -(370 * i)
+    //   }, 500);
+    // });
+    
+    // l_btn.click(function(){
+    //   if (i == 0) {
+    //     i = 3;
+    //   } else {
+    //     i--;
+    //   }
+    //   console.log(i);
+      
+    //   $('.bath ul').animate({
+    //     'left': -(370 * i)
+    //   }, 500);
+    // });
+
+
+// 배쓰밤 슬라이드
+let j = 0;
+
+const bath_le_btn = $('.bath .l_btn');
+const bath_ri_btn = $('.bath .r_btn');
+
+bath_ri_btn.click(function(){
+  if (j == 3) {
+    j = 0;
+  } else {
+    j++;
+  }
   console.log(j);
   
   $('.bath ul').animate({
-    'left':-(370*j)
-  },500);
-  });
-    
-  le_btn.click(function(){
-          
-    if(j==0){
-      j=3;
-    }else{
-      j--
-    };
-    console.log(j);
-    
-    $('.bath ul').animate({
-      'right':(370*j)
-    },500);
-  });
+    'left': -(370 * j)
+  }, 500);
+});
+
+bath_le_btn.click(function(){
+  if (j == 0) {
+    j = 3;
+  } else {
+    j--;
+  }
+  console.log(j);
+  
+  $('.bath ul').animate({
+    'left': -(370 * j)
+  }, 500);
+});
 
 
-    // 베스트셀러 슬라이드
-    let i = 0;
-    const l_btn = $('.le_btn');
-    const r_btn = $('.ri_btn');
+// 베스트셀러 슬라이드
+let i = 0;
+
+const best_l_btn = $('.best .l_btn');
+const best_r_btn = $('.best .r_btn');
+
+best_r_btn.click(function(){
+  if (i == 3) {
+    i = 0;
+  } else {
+    i++;
+  }
+  console.log(i);
   
-    r_btn.click(function(){
-      // i = $(this).index();
+  $('.best ul').animate({
+    'left': -(370 * i)
+  }, 500);
+});
+
+best_l_btn.click(function(){
+  if (i == 0) {
+    i = 3;
+  } else {
+    i--;
+  }
+  console.log(i);
   
-      if(i==3){
-        i=0;
-      }else{
-        i++
-      };
-      console.log(i);
-  
-      $('.best ul').animate({
-        'left':-(370*i)
-      },500);
-    });
-  
-    l_btn.click(function(){
-      
-      if(i==0){
-        i=3;
-      }else{
-        i--
-      };
-      console.log(i);
-  
-      $('.best ul').animate({
-        'right':(370*i)
-      },500);
-    });
+  $('.best ul').animate({
+    'left': -(370 * i)
+  }, 500);
+});
 
 
 
