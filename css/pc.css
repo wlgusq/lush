@@ -80,7 +80,7 @@ header{
 .gnb > li > a:hover{text-decoration: underline;}
 .gnb > li a:hover{text-decoration: underline;}
 
-.gnb > li i:hover{scale: 1.1;}
+.gnb > li i:hover{transform: scale(1.1);}
 
 
 /* sub */
@@ -100,7 +100,7 @@ i.fa-shopping-cart{
   font-size: 1rem;
   display: none;
 }
-nav i.fa-shopping-cart:hover{scale: 1.1;}
+nav i.fa-shopping-cart:hover{transform: scale(1.1);}
 
 input[type=checkbox], i.fa-bars, label[for=toggle]{display: none;}
 .mobile_logo{display: none;}
@@ -480,6 +480,8 @@ background:#fffef9;
 #l_btn{left: 0px;}
 #r_btn{right: 0px;}
 
+#l_btn2{left: 0px;}
+#r_btn2{right: 0px;}
 
 
 
@@ -711,7 +713,7 @@ dd > a > i{
   background: #FFD500;
 }
 
-.t_btn > ul > li > a:hover i{scale: 1.05;}
+.t_btn > ul > li > a:hover i{transform: scale(1.05);}
 
 
 

@@ -261,12 +261,13 @@ background:#fffef9;
 .inner > li > a p{
   font-size: 0.8rem;
   margin-left: 10px;
-  padding: 15px 0px;
+  padding: 15px 5px;
+  display: block;
 }
 .inner > li > a span{
   font-size: 0.8rem;
-  float: right;
-  margin-right: 10px;
+  float: left;
+  margin: 10px 0px 0px 10px;
   color: #555;
 }
 
@@ -539,7 +540,7 @@ i.fa-angle-down{
 .f_lnb > ul > li:first-child > a{color: #FFD500;}
 .f_lnb > ul > li > a{font-size: 0.8rem;}
 
-.f_left > address{display: none;}
+/* .f_left > address{display: none;} */
 
 
 

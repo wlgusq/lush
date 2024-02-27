@@ -4,15 +4,15 @@
     $(document).ready(function(){
 
           // 헤더 조절
-    $(window).mousewheel(function(e,delta){
-      if(delta>0){
-        // console.log('위');
-        $('header').addClass('scroll');
-      }else if(delta<0){
-        // console.log('아래');
-        $('header').removeClass('scroll');
-      }
-    });
+    // $(window).mousewheel(function(e,delta){
+    //   if(delta>0){
+    //     // console.log('위');
+    //     $('header').addClass('scroll');
+    //   }else if(delta<0){
+    //     // console.log('아래');
+    //     $('header').removeClass('scroll');
+    //   }
+    // });
 
 
     
