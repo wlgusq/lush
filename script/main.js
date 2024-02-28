@@ -90,77 +90,6 @@
       });
 
 
-
-
-
-
-
-    // // 배쓰밤 슬라이드
-    // let j = 0;
-    
-    // const le_btn = $('.l_btn');
-    // const ri_btn = $('.r_btn');
-    
-    // ri_btn.click(function(){
-    //   if (j == 3) {
-    //     j = 0;
-    //   } else {
-    //     j++;
-    //   }
-    //   console.log(j);
-      
-    //   $('.bath ul').animate({
-    //     'left': -(370 * j)
-    //   }, 500);
-    // });
-    
-    // le_btn.click(function(){
-    //   if (j == 0) {
-    //     j = 3;
-    //   } else {
-    //     j--;
-    //   }
-    //   console.log(j);
-      
-    //   $('.bath ul').animate({
-    //     'left': -(370 * j)
-    //   }, 500);
-    // });
-
-
-    // // 베스트셀러 슬라이드
-    // let i = 0;
-    
-    // const l_btn = $('.l_btn');
-    // const r_btn = $('.r_btn');
-    
-    // r_btn.click(function(){
-    //   if (i == 3) {
-    //     i = 0;
-    //   } else {
-    //     i++;
-    //   }
-    //   console.log(i);
-      
-    //   $('.bath ul').animate({
-    //     'left': -(370 * i)
-    //   }, 500);
-    // });
-    
-    // l_btn.click(function(){
-    //   if (i == 0) {
-    //     i = 3;
-    //   } else {
-    //     i--;
-    //   }
-    //   console.log(i);
-      
-    //   $('.bath ul').animate({
-    //     'left': -(370 * i)
-    //   }, 500);
-    // });
-
-
 // 배쓰밤 슬라이드
 let j = 0;
 
@@ -194,11 +123,11 @@ bath_le_btn.click(function(){
 });
 
 
-// 베스트셀러 슬라이드
+// // 베스트셀러 슬라이드
 let i = 0;
 
-const best_l_btn = $('.best .l_btn');
-const best_r_btn = $('.best .r_btn');
+const best_l_btn = $('.le_btn2');
+const best_r_btn = $('.ri_btn2');
 
 best_r_btn.click(function(){
   if (i == 3) {
@@ -231,6 +160,20 @@ best_l_btn.click(function(){
 
 
 
+
+
+
+// 로그인
+$('#log_btn').click(function(){
+  alert('준비 중인 페이지입니다!')
+});
+
+// 검색
+$('#sea_btn').click(function(){
+  alert('준비 중인 페이지입니다!')
+});
+
+
 // qr코드
       const q_btn = $('#qr_btn');
       const c_btn = $('.qr > i');
@@ -251,7 +194,6 @@ best_l_btn.click(function(){
       $('address').slideToggle();
     });
 
-    
 
 
 
